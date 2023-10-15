@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div>
+        <h1 id="title">اولین فرم ثبت نام من</h1>
+        <p id="description">ممنون که با پر کردن این فرم به وبسایت ما کمک می کنید</p>
+    </div>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">نام و نام خانوادگی<input placeholder="نام شما" required id="name" type="text"></label>
+            <label for="email" id="email-label">ایمیل<input placeholder="آدرس ایمیل شما" required id="email" type="email"></label>
+            <label for="number" id="number-label">سن (اختیاری)<input placeholder="سن شما" min="18" max="120" id="number" type="number"></label>
+        </fieldset>
+        <fieldset>
+            <p>در کدام زمینه برنامه نویسی توانایی شما بیشتر است؟</p>
+            <select name="dropdown" id="dropdown">
+                <option value="select">یک مورد را انتخاب کنید</option>
+                <option value="coding">فرانت</option>
+                <option value="software">بک اند</option>
+                <option value="software">زمینه نرم افزار</option>
+                <option value="IT">زمینه سخت افزار</option>
+            </label>
+        </select>
+    </fieldset>
+    <fieldset class="radio-fieldset">
+        <p id="C">مهارت شما در زبان انگلیسی چقدر است؟</p>
+        <label for="A"><input id="A" value="a" type="radio" name="level">خیلی خوب</label>
+        <label for="B"><input id="B" value="b" type="radio" name="level">متوسط</label>
+    </fieldset>
+    <fieldset class="big-fieldset">
+        <p>چه زمینه ای رو دوست داری ادامه بدی؟ (میتونی چند تا گزینه انتخاب کنی)</p>
+        <label for="Front-end"><input id="Front-end" type="checkbox" value="Front-end">برنامه نویس فرانت اند</label>
+        <label for="Back-end Projects"><input id="Back-end Projects" type="checkbox" value="Back-end Projects">برنامه نویس بک اند</label>
+        <label for="Data"><input id="Data" type="checkbox" value="Data">کار در زمینه های دیگر</label>
+    </fieldset>
+    <fieldset>
+        <label for="comment">یک بیوگرافی مختصر درباره خودتان:
+            <textarea placeholder="من برنامه نویس جاوااسکریپت هستم و ..." name="" id="comment"  rows="5"></textarea>       
+        </label>
+    </fieldset>
+    
+    <input value="ارسال فرم" type="submit">
+</form>
+
+<p id="footer">ساخته شده توسط مهران رهام</p>
+
+</body>
+</html>
